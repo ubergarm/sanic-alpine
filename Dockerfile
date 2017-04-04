@@ -13,8 +13,9 @@ RUN apk add --no-cache python3 \
             git && \
     rm -r /root/.cache
 
-COPY . /app
+COPY ./server.py /server.py
 
-WORKDIR /app
+ENTRYPOINT ["/usr/bin/python3"]
 
-CMD python3 server.py
+CMD ["/server.py"]
+
