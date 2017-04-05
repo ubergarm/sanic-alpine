@@ -17,7 +17,7 @@ $ curl localhost:8000
 ## Development
 Volume mount your own `sanic` project to run it within a container:
 ```bash
-docker run --rm -it -v `pwd`:/app -p 8000:8000 ubergarm/sanic-alpine python3 myserver.py
+docker run --rm -it -v `pwd`:/app -p 8000:8000 ubergarm/sanic-alpine myserver.py
 ```
 
 ## Building
